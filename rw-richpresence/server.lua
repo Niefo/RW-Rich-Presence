@@ -1,6 +1,9 @@
 --[  SERVER.LUA  ]--
 
-RegisterNetEvent("print")
-AddEventHandler("print",function ()
-    print("RW | Richpresence wurde gestartet!")
-end)
+print("RWRP | Richpresence wurde gestartet!")
+
+function printHourlyMessage()
+    print("RWRP | Richpresence läuft!")
+  end
+  
+  setInterval(printHourlyMessage, 3600000)
